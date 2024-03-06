@@ -1,7 +1,5 @@
 if (TARGET tinyusb_device)
-    add_executable(hello
-            hello.c
-            )
+    add_executable(hello hello.c)
 
     # pull in common dependencies
     target_link_libraries(hello pico_stdlib)
@@ -14,5 +12,5 @@ if (TARGET tinyusb_device)
     pico_add_extra_outputs(hello)
 
 elseif(PICO_ON_DEVICE)
-    message(WARNING "not building hello_usb because TinyUSB submodule is not initialized in the SDK")
+    message(WARNING "not building hello because TinyUSB submodule is not initialized in the SDK")
 endif()

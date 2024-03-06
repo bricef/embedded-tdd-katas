@@ -240,6 +240,27 @@ $ git clone https://github.com/bricef/embedded-tdd-katas.git
 
 ---
 
+<style scoped>
+h1{
+  margin-top: 0px;
+  color: white;
+  text-align:left;
+}
+h2 {
+  margin-top:450px;
+  color:white;
+  text-align:right;
+  font-size: xxxx-large;
+}
+</style>
+# KEEP CALM
+## IT'S DEMO TIME
+![bg cover](assets/demo-time.jpg)
+
+
+
+---
+
 <!-- _class: invert -->
 
 # The Katas
