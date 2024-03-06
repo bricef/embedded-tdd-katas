@@ -30,13 +30,14 @@ brice@fractallambda.com
 
 # Plan for this evening
 
-1. TDD Refresh
-2. What we mean by "embedded"
-3. Embedded craftsmanship practices
-4. The Katas
+1. Intro
+2. What is "Embedded"
+3. Embedded craftsmanship
+4. Using Replit
+5. The Katas
     1. LED Driver Kata 
     2. Interrupt Kata
-5. Recap
+6. Recap
 
 ---
 
@@ -74,7 +75,7 @@ brice@fractallambda.com
 ---
 <!-- _class: invert -->
 
-# What I mean by Embedded
+# What is "Embedded"
 
 ---
 
@@ -103,7 +104,7 @@ brice@fractallambda.com
 ---
 <!-- _class: invert -->
 
-# Craftsmanship for Embedded
+# Embedded Craftsmanship
 
 ---
 
@@ -193,6 +194,7 @@ h1{
   color: white;
 }
 pre {
+  font-size: xxx-large;
   margin-top:450px;
 }
 </style>
@@ -211,6 +213,7 @@ h1{
 }
 pre {
   margin-top:450px;
+  font-size: xxx-large;
 }
 </style>
 # 4. Choose 'C' as a language
@@ -227,8 +230,10 @@ https://github.com/bricef/embedded-tdd-katas.git
 ---
 
 <!-- clone repo -->
-# Clone the repo
-Use the Replit shell to clone the repository
+# Local alternative
+If you're confident in your local toolchain
+
+Clone the repository locally:
 ```shell
 $ git clone https://github.com/bricef/embedded-tdd-katas.git
 ```
@@ -260,12 +265,11 @@ $ git clone https://github.com/bricef/embedded-tdd-katas.git
 
 ### Further Reading
 
-![bg right fit](assets/tdd-book-cover.jpg)
+![bg right width:80%](assets/tdd-book-cover.jpg)
 
 - [TDD for Embedded C](https://pragprog.com/titles/jgade/test-driven-development-for-embedded-c/)
 - [ThrowTheSwitch.org](https://www.throwtheswitch.org/)
 - [Unity Test Framework](https://github.com/ThrowTheSwitch/Unity)
-- 
 
 
 ---
