@@ -154,10 +154,6 @@ Advanced Mocking
 ---
 <!-- _class: invert -->
 
-# Environment Setup
-
----
-
 # Using Replit
 
 Create a [replit.com](https://replit.com/) account 
@@ -166,22 +162,67 @@ Create a [replit.com](https://replit.com/) account
 
 ---
 
-<!-- signup page -->
-
 ![bg cover](assets/replit-home.png)
 
 ---
-
-<!-- home page -->
+<style scoped>
+h1{
+  margin-top: 500px;
+  color: white;
+}
+</style>
 ![bg cover](assets/replit-create.png)
+# 1. Create a new Repl
 
 ---
 
-<!-- create project page -->
+![bg cover](assets/replit-create-2.png)
+<style scoped>
+h1{
+  margin-top: 500px;
+  color: white;
+}
+</style>
+# 2. Import from Github
+---
+
+![bg cover](assets/replit-create-3.png)
+<style scoped>
+h1{
+  margin-top: 0px;
+  color: white;
+}
+pre {
+  margin-top:450px;
+}
+</style>
+# 3. Choose "From URL"
+
+```
+https://github.com/bricef/embedded-tdd-katas.git
+```
+---
+
+![bg cover](assets/replit-create-4.png)
+<style scoped>
+h1{
+  margin-top: 0px;
+  color: white;
+}
+pre {
+  margin-top:450px;
+}
+</style>
+# 4. Choose 'C' as a language
+
+```
+https://github.com/bricef/embedded-tdd-katas.git
+```
 
 ---
 
 <!-- project page -->
+![bg cover](assets/replit-c-project.png)
 
 ---
 
