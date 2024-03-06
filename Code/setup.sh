@@ -31,11 +31,12 @@ function setup {
     git submodule update --init
 
     # Set up the Pico SDK submodules
-    cd pico-sdk
+    cd libs/pico-sdk
     git submodule update --init
 
     # We should now be ready to build.
     # run cmake
+    cd ..
     cd ..
     cd build
     cmake ..
