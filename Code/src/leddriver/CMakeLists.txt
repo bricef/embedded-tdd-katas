@@ -12,7 +12,7 @@ if (TARGET tinyusb_device)
     
 
     # enable usb output, disable uart output
-    # pico_enable_stdio_usb(leddriver 1)
+    pico_enable_stdio_usb(leddriver 1)
     # pico_enable_stdio_uart(leddriver 0)
 
     # create map/bin/hex/uf2 file etc.
