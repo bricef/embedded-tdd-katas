@@ -28,6 +28,14 @@ brice@fractallambda.com
 
 ---
 
+![](assets/qr.png)
+
+Slides and code available on Github
+
+[github.com/bricef/embedded-tdd-katas](https://github.com/bricef/embedded-tdd-katas)
+
+---
+
 # Plan for this evening
 
 1. Intro
@@ -43,11 +51,13 @@ brice@fractallambda.com
 
 <!-- _class: invert -->
 
-# Intro
+# Why this talk?
 
 ---
 
-## Why this talk?
+<!-- _class: invert -->
+
+# TDD Refresh
 
 ---
 
@@ -104,7 +114,7 @@ brice@fractallambda.com
 ---
 <!-- _class: invert -->
 
-# Embedded Craftsmanship
+# Embedded Strategy
 
 ---
 
@@ -112,8 +122,9 @@ brice@fractallambda.com
 
 - Dual targeting
   - Simulate hard-to-duplicate conditions
-  - Target bottleneck
-  - Running the test suite on the target
+  - Get around target bottleneck
+  - Running the test suite locally
+  - Automated CI 
 
 ---
 
@@ -123,23 +134,59 @@ brice@fractallambda.com
 
 ---
 
-# CI and automated HW tests
+# Automated HW tests
 
+- There's no reason why you can't create an automated harness that runs the unit test on test devices.
+
+- There's no reason why your CI builds couldn't use HW tests. Including cloud runners!
+
+- You might want to ship tests in production devices as part of a HW self-test suite.
   
+_We won't go into depth in this topic tonight._  
+
 ---
 
-# Advanced Mocking
+# Test Doubles
 
-Advanced Mocking
-    1. Mock the clock
-    2. Test doubles
-      1. Code structure & Link time substitution
-      2. Function pointer substitution
-      3. Syntactic substitution (preprocessor)
+![bg right](assets/mockingbird.jpg)
+
+- Crititcal for embedded
+- Mock the HAL
+- Mock the clock
+
+---
+
+# How to Mock?
+
+In order of preference
+
+  1. Link time substitution
+  (Requires appropriate code structure)
+  2. Function pointer substitution
+  3. Syntactic substitution (preprocessor)
+
+Combine at will...
       
 ---
 
 # Simulators
+
+Can permit testing compiled target code in CI without target hardware.
+
+Should be able to run your test suite. 
+
+Go hand-in-hand with Test Doubles.
+
+---
+
+# TDD Test Cycles
+
+![width:1080px](./assets/tdd-cycles.png)
+
+---
+<!-- _class: invert -->
+
+# Craftsmanship fundamentals still matter
 
 ---
 
@@ -151,6 +198,17 @@ Advanced Mocking
   4. Interface Segregation Principle
   5. Dependency Inversion Priciple
 
+
+---
+<style scoped>
+h1{
+  margin-top: 500px;
+  color: white;
+}
+</style>
+![bg cover](assets/party.jpg)
+
+# Let's get the party started!
 
 ---
 <!-- _class: invert -->
@@ -269,9 +327,13 @@ h2 {
 
 # LED Driver Kata 
 
+Look at `KATA.md` in `Code/src/leddriver` 
+
 ---
 
 # Interrupt Kata
+
+Look at `KATA.md` in `Code/src/interrupt` 
 
 ---
 <!-- _class: invert -->
@@ -281,6 +343,12 @@ h2 {
 ---
 
 # What we learnt
+
+1. TDD is possible and _useful_ for embedded software.
+2. Embedded TDD strategies make the process easier.
+3. Dual targeting is worth it.
+
+(C is fun, maybe?)
 
 --- 
 
@@ -296,10 +364,8 @@ h2 {
 ---
 <!-- _class: invert -->
 
-# Thank you
+# Thank you 🙏
 
-# 🙏
+## Q&A❓
 
-## Q&A
-
-# ❓
+#### I'm available for contracting brice@fractallambda.com  
