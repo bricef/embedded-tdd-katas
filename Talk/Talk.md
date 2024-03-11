@@ -369,3 +369,36 @@ Look at `KATA.md` in `Code/src/interrupt`
 ## Q&A❓
 
 #### I'm available for contracting brice@fractallambda.com  
+
+--- 
+<style scoped>
+  .attribution {
+    font-size: large;
+    text-align: left;
+
+  }
+</style>
+### Attributions
+
+<div class="attribution">
+
+Arrange Act Assert - Own work - CC Attribution-Sharealike
+
+Demo Time - Still frame taken from the film "Airplane!" 1980 -  © Paramount Pictures - Used under fair use for teaching.
+
+Party Time by	Irtiza Haider - CC Attribution-Sharealike -  - [Wikimedia Commons](https://commons.wikimedia.org/wiki/File:Party_all_night.jpg)
+
+Ping-pong TDD - Own work - CC Attribution-Sharealike - Created using [Mermaid.js](https://mermaid.js.org/)
+
+Red-green-refactor - © [Kodeco](https://www.kodeco.com/books/android-test-driven-development-by-tutorials/v2.0/chapters/3-what-is-tdd) - Used under fair use for teaching.
+
+Replit Screenshots - Own work - Created under fair use for teaching.
+
+TDD for Embedded C Book Cover - © [2011 Pragmatic Bookshelf](https://pragprog.com/titles/jgade/test-driven-development-for-embedded-c/) - Used under fair use for teaching.
+
+TDD Cycles - © [2011 Pragmatic Bookshelf](https://pragprog.com/titles/jgade/test-driven-development-for-embedded-c/) - Used under fair use for teaching.
+
+Mockingbird by Ryan Hagerty - Public Domain - [National Digital Library of the United States Fish and Wildlife Service](https://digitalmedia.fws.gov/cdm/)
+
+</div>
+
