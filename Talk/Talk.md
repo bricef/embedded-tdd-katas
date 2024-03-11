@@ -171,9 +171,9 @@ Combine at will...
 
 # Simulators
 
-Can permit testing compiled target code in CI without target hardware.
+Allow testing compiled target code in CI.
 
-Should be able to run your test suite. 
+Run entire test suite.
 
 Go hand-in-hand with Test Doubles.
 
