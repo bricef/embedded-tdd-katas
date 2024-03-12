@@ -42,9 +42,7 @@ Slides and code available on Github
 2. What is "Embedded"
 3. Embedded craftsmanship
 4. Using Replit
-5. The Katas
-    1. LED Driver Kata 
-    2. Interrupt Kata
+5. LED Driver Kata 
 6. Recap
 
 ---
@@ -328,12 +326,6 @@ h2 {
 # LED Driver Kata 
 
 Look at `KATA.md` in `Code/src/leddriver` 
-
----
-
-# Interrupt Kata
-
-Look at `KATA.md` in `Code/src/interrupt` 
 
 ---
 <!-- _class: invert -->
