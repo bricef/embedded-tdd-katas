@@ -7,8 +7,9 @@
     #include "pico/stdlib.h"
 #endif
 
-#define IS_OK 0
-#define IS_NOT_OK 1
+/*
+ * Test your LED driver in this file.
+ */
 
 void setUp(void) {
     // set stuff up here
@@ -18,19 +19,18 @@ void tearDown(void) {
     // clean stuff up here
 }
 
-void test_unity_run(void){
+void we_can_write_passing_tests(void){
     TEST_ASSERT_EQUAL(1, 1);
 }
 
-void test_led_init(void){
-    int return_code = LedDriver_init();
-    TEST_ASSERT_EQUAL(IS_OK, return_code);
+void all_leds_are_off_after_driver_is_initialised(void){
+    TEST_FAIL_MESSAGE("Start Here");
 }
 
 int main(void){
     stdio_init_all();
     UNITY_BEGIN();
-    RUN_TEST(test_unity_run);
-    RUN_TEST(test_led_init);
+    RUN_TEST(we_can_write_passing_tests);
+    RUN_TEST(all_leds_are_off_after_driver_is_initialised);
     return UNITY_END();
 }

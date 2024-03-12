@@ -1,8 +1,5 @@
 #include "unity.h"
 
-#define IS_OK 0
-#define IS_NOT_OK 1
-
 void setUp(void) {
     // set stuff up here
 }

@@ -2,7 +2,7 @@
 
 OUT_DIR = build-local
 DEFS = -DTEST -DBUILD_LOCAL
-CFLAGS = -Wall -I. $(DEFS) -Ilibs/Unity/src -Isrc/common
+CFLAGS = -Wall -I. $(DEFS) -Ilibs/Unity/src -Isrc/mock-pico-stdlib
 SRC = src
 
 all: $(OUT_DIR)/leddriver-test $(OUT_DIR)/interrupt-test
