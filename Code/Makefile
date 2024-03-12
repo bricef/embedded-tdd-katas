@@ -2,7 +2,7 @@
 
 OUT_DIR = build-local
 DEFS = -DTEST -DBUILD_LOCAL
-CFLAGS = -Wall -I. $(DEFS) -Ilibs/Unity/src
+CFLAGS = -Wall -I. $(DEFS) -Ilibs/Unity/src -Isrc/common
 SRC = src
 
 all: $(OUT_DIR)/leddriver-test $(OUT_DIR)/interrupt-test
