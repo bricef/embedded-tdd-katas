@@ -1,6 +1,6 @@
 # Embedded TDD Katas
 
-[![Title slide of presentation](Talk/assets/title-slide.png)](Talk.pdf)
+[![Title slide of presentation](Talk/assets/title-slide.png)](./Talk/Talk.pdf)
 
 
 ## About
