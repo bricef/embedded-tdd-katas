@@ -25,7 +25,8 @@ function check_deps {
 
 function setup {
     # Make the build directory if id doesn't exist
-    mkdir -p build
+    mkdir -p build-pico
+    mkdir -p build-local
 
     # Set up the Pico C SDK
     git submodule update --init
@@ -35,11 +36,11 @@ function setup {
     git submodule update --init
 
     # We should now be ready to build.
-    # run cmake
-    cd ..
-    cd ..
-    cd build
+    # run cmake for the pico SDK
+    cd ../../build-pico
     cmake ..
+
+
 
     # Ready for development 
     echo "Setup complete. Ready for development."

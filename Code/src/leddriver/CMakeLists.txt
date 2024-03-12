@@ -10,7 +10,6 @@ if (TARGET tinyusb_device)
     target_link_libraries(leddriver_main leddriver)
 
     
-
     # enable usb output, disable uart output
     pico_enable_stdio_usb(leddriver 1)
     # pico_enable_stdio_uart(leddriver 0)
@@ -20,5 +19,5 @@ if (TARGET tinyusb_device)
     pico_add_extra_outputs(leddriver_test)
 
 elseif(PICO_ON_DEVICE)
-    message(WARNING "not building hello because TinyUSB submodule is not initialized in the SDK")
+    message(WARNING "not building leddriver because TinyUSB submodule is not initialized in the SDK")
 endif()
