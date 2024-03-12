@@ -4,8 +4,10 @@
 		pkgs.ccls
 		pkgs.gdb
 		pkgs.gnumake
-        pkgs.qemu
+		pkgs.qemu
 		pkgs.gcc-arm-embedded-9
-		pkgs.nodejs_21
+		pkgs.nodejs
+		pkgs.cmake
+		pkgs.python3
 	];
 }

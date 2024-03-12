@@ -110,103 +110,18 @@ Slides and code available on Github
 - Compiler licenses
 
 ---
-<!-- _class: invert -->
-
-# Embedded Strategy
-
----
-
-# Dual targeting
-
-- Dual targeting
-  - Simulate hard-to-duplicate conditions
-  - Get around target bottleneck
-  - Running the test suite locally
-  - Automated CI 
-
----
-
-# Embedded TDD Cycles
-
-![width:1080px](./assets/tdd-cycles.png)
-
----
-
-# Automated HW tests
-
-- There's no reason why you can't create an automated harness that runs the unit test on test devices.
-
-- There's no reason why your CI builds couldn't use HW tests. Including cloud runners!
-
-- You might want to ship tests in production devices as part of a HW self-test suite.
-  
-_We won't go into depth in this topic tonight._  
-
----
-
-# Test Doubles
-
-![bg right](assets/mockingbird.jpg)
-
-- Crititcal for embedded
-- Mock the HAL
-- Mock the clock
-
----
-
-# How to Mock?
-
-In order of preference
-
-  1. Link time substitution
-  (Requires appropriate code structure)
-  2. Function pointer substitution
-  3. Syntactic substitution (preprocessor)
-
-Combine at will...
-      
----
-
-# Simulators
-
-Allow testing compiled target code in CI.
-
-Run entire test suite.
-
-Go hand-in-hand with Test Doubles.
-
----
-
-# TDD Test Cycles
-
-![width:1080px](./assets/tdd-cycles.png)
-
----
-<!-- _class: invert -->
-
-# Craftsmanship fundamentals still matter
-
----
-
-# SOLID
-
-  1. Single Responsibility Principle
-  2. Open Closed Principle
-  3. Liskov Substitution Principle
-  4. Interface Segregation Principle
-  5. Dependency Inversion Priciple
-
-
----
 <style scoped>
 h1{
-  margin-top: 500px;
+  margin-top: 450px;
   color: white;
 }
+p { color: white}
 </style>
 ![bg cover](assets/party.jpg)
 
 # Let's get the party started!
+
+(also, let's download dependencies whilst we talk!)
 
 ---
 <!-- _class: invert -->
@@ -293,6 +208,109 @@ Clone the repository locally:
 ```shell
 $ git clone https://github.com/bricef/embedded-tdd-katas.git
 ```
+---
+
+# Run the setup script
+
+Open a shell in Replit, then run 
+
+```shell
+$ cd Code
+$ ./setup.sh
+```
+
+Now we wait for dependencies to get downloaded...
+
+# ⏳
+
+---
+<!-- _class: invert -->
+Whilst we wait...
+
+# Embedded Strategy
+
+---
+
+# Dual targeting
+
+- Dual targeting
+  - Simulate hard-to-duplicate conditions
+  - Get around target bottleneck
+  - Running the test suite locally
+  - Automated CI 
+
+---
+
+# Embedded TDD Cycles
+
+![width:1080px](./assets/tdd-cycles.png)
+
+---
+
+# Automated HW tests
+
+- There's no reason why you can't create an automated harness that runs the unit test on test devices.
+
+- There's no reason why your CI builds couldn't use HW tests. Including cloud runners!
+
+- You might want to ship tests in production devices as part of a HW self-test suite.
+  
+_We won't go into depth in this topic tonight._  
+
+---
+
+# Test Doubles
+
+![bg right](assets/mockingbird.jpg)
+
+- Crititcal for embedded
+- Mock the HAL
+- Mock the clock
+
+---
+
+# How to Mock?
+
+In order of preference
+
+  1. Link time substitution
+  (Requires appropriate code structure)
+  2. Function pointer substitution
+  3. Syntactic substitution (preprocessor)
+
+Combine at will...
+      
+---
+
+# Simulators
+
+Allow testing compiled target code in CI.
+
+Run entire test suite.
+
+Go hand-in-hand with Test Doubles.
+
+---
+
+# TDD Test Cycles
+
+![width:1080px](./assets/tdd-cycles.png)
+
+---
+<!-- _class: invert -->
+
+# Craftsmanship fundamentals still matter
+
+---
+
+# SOLID
+
+  1. Single Responsibility Principle
+  2. Open Closed Principle
+  3. Liskov Substitution Principle
+  4. Interface Segregation Principle
+  5. Dependency Inversion Priciple
+
 
 ---
 
