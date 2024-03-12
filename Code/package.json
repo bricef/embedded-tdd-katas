@@ -1,0 +1,26 @@
+{
+    "name": "embedded-tdd-katas",
+    "version": "0.0.1",
+    "description": "Embedded TDD examples",
+    "repository": "https://github.com/bricef/embedded-tdd-katas",
+    "keywords": [
+      "rp2040",
+      "tdd",
+      "embedded"
+    ],
+    "author": "Brice Fernandes <brice@fractallambda.com>",
+    "license": "CC_SA_4.0",
+    "engines": {
+      "node": ">=16.0.0"
+    },
+    "scripts": {
+      "start": "tsx demo/emulator-run.ts",
+      "start:gdbdiff": "tsx debug/gdbdiff.ts",
+      "test": "vitest run"
+    },
+    "devDependencies": {
+        "rp2040js": "^1.0.1",
+        "tsx": "^4.6.2",
+        "typescript": "^5.2.2"
+    }
+  }
