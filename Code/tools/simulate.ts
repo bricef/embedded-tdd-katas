@@ -3,7 +3,7 @@ import { GDBTCPServer } from 'rp2040js/gdb-tcp-server';// '../src/gdb/gdb-tcp-se
 import { Simulator } from 'rp2040js'; //'../src/simulator.js';
 import { bootromB1 } from './bootrom.js';
 import { loadHex } from './intelhex.js';
-
+import { ConsoleLogger, LogLevel } from './logging.ts';
 
 
 
@@ -21,6 +21,7 @@ import { loadHex } from './intelhex.js';
   const hex = fs.readFileSync(hexFile, 'utf-8');
   const simulator = new Simulator();
   const mcu = simulator.rp2040;
+  mcu.logger = new ConsoleLogger(LogLevel.Warn);
   mcu.loadBootrom(bootromB1);
   loadHex(hex, mcu.flash, 0x10000000);
 

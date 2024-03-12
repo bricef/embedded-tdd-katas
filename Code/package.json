@@ -11,12 +11,9 @@
     "author": "Brice Fernandes <brice@fractallambda.com>",
     "license": "CC_SA_4.0",
     "engines": {
-      "node": ">=16.0.0"
+      "node": ">=18.0.0"
     },
     "scripts": {
-      "start": "tsx demo/emulator-run.ts",
-      "start:gdbdiff": "tsx debug/gdbdiff.ts",
-      "test": "vitest run"
     },
     "devDependencies": {
         "rp2040js": "^1.0.1",

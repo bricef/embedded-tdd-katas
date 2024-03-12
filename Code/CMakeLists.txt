@@ -14,5 +14,6 @@ project(embedded_tdd)
 # initialize the Raspberry Pi Pico SDK
 pico_sdk_init()
 
+add_subdirectory(src/hello)
 add_subdirectory(src/leddriver)
 add_subdirectory(src/interrupt)

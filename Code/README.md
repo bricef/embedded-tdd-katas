@@ -17,3 +17,11 @@ You will need the following tools on your `PATH`:
 - `git`
 - `cmake`
 - `gcc-arm-none-eabi`
+- `node`
+
+
+## Building and testing locally 
+
+## Building for the target (RP2040)
+
+## Running the emulator

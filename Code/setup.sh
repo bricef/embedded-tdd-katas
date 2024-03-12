@@ -20,6 +20,11 @@ function check_deps {
         exit 1
     fi
 
+    if ! [ -x "$(command -v node)" ]; then
+        echo 'Error: node is not installed.' >&2
+        exit 1
+    fi
+
 }
 
 
@@ -35,12 +40,13 @@ function setup {
     cd libs/pico-sdk
     git submodule update --init
 
+    # Set up the seimulator dependencies
+    npm install
+
     # We should now be ready to build.
     # run cmake for the pico SDK
     cd ../../build-pico
     cmake ..
-
-
 
     # Ready for development 
     echo "Setup complete. Ready for development."
