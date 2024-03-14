@@ -1,8 +1,11 @@
 if (TARGET tinyusb_device)
     add_executable(hello hello.c)
+    
+    add_library(rgbdriver rgbdriver.c)
+    target_link_libraries(rgbdriver pico_stdlib)
 
     # pull in common dependencies
-    target_link_libraries(hello pico_stdlib)
+    target_link_libraries(hello pico_stdlib rgbdriver)
 
     # enable usb output, disable uart output
     pico_enable_stdio_usb(hello 0)
