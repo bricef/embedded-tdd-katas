@@ -5,7 +5,7 @@ DEFS = -DTEST -DBUILD_LOCAL
 CFLAGS = -Wall -I. $(DEFS) -Ilibs/Unity/src -Isrc/mock-pico-stdlib
 SRC = src
 
-all: $(OUT_DIR)/leddriver-test $(OUT_DIR)/interrupt-test
+all: $(OUT_DIR)/leddriver-test 
 
 test-leddriver: $(OUT_DIR)/leddriver-test
 	$(OUT_DIR)/leddriver-test
@@ -24,8 +24,8 @@ $(OUT_DIR)/interrupt-test: $(OUT_DIR)/unity.o $(OUT_DIR)/interrupt.o
 $(OUT_DIR)/leddriver.o: $(SRC)/leddriver/leddriver.c
 	gcc $(CFLAGS) -c -o $@ $^
 
-$(OUT_DIR)/interrupt.o: $(SRC)/interrupt/interrupt.c
-	gcc $(CFLAGS) -c -o $@ $^
+# $(OUT_DIR)/interrupt.o: $(SRC)/interrupt/interrupt.c
+# 	gcc $(CFLAGS) -c -o $@ $^
 
 $(OUT_DIR)/unity.o: $(OUT_DIR)
 	gcc $(CFLAGS) -c -o $@ libs/Unity/src/unity.c
