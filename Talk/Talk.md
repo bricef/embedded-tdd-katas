@@ -18,11 +18,11 @@ brice@fractallambda.com
 ---
 <!-- paginate: true -->
 
-# Logistics and Wifi
+# Logistics and WiFi
 
 🚽 Behind the main screen to the right of the corridor.
 
-🛜 Wifi is **The Bradfield Centre** password is **Ca3Br1d5e**
+🛜 WiFi is **The Bradfield Centre** password is **Ca3Br1d5e**
 
 🚨 We do not expect alarms. Assume a fire alarm is real and make your way to the car park.
 
@@ -91,7 +91,7 @@ Slides and code available on Github
 
 - Resource constraints (RAM, CPU)
 - Lack of standard libraries
-- No or limited filesystem
+- No or limited file-system
 - Limited Interface (serial? UART, SWI)
 - No Operating System
 - No standard library
@@ -263,7 +263,7 @@ _We won't go into depth in this topic tonight._
 
 ![bg right](assets/mockingbird.jpg)
 
-- Crititcal for embedded
+- Critical for embedded
 - Mock the HAL
 - Mock the clock
 
@@ -309,7 +309,7 @@ Go hand-in-hand with Test Doubles.
   2. Open Closed Principle
   3. Liskov Substitution Principle
   4. Interface Segregation Principle
-  5. Dependency Inversion Priciple
+  5. Dependency Inversion Principle
 
 
 ---
